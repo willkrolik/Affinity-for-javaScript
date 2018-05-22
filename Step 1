@@ -1,100 +1,100 @@
 var affinityMain = [
-"1 Blinkmoth Nexus",
-"2 Blinkmoth Nexus",
-"3 Blinkmoth Nexus",
-"4 Blinkmoth Nexus",
+"Blinkmoth Nexus",
+"Blinkmoth Nexus",
+"Blinkmoth Nexus",
+"Blinkmoth Nexus",
 
 
-"1 Darksteel Citadel",
-"2 Darksteel Citadel",
-"3 Darksteel Citadel",
-"4 Darksteel Citadel",
+"Darksteel Citadel",
+"Darksteel Citadel",
+"Darksteel Citadel",
+"Darksteel Citadel",
 
 
-"1 Inkmoth Nexus",
-"2 Inkmoth Nexus",
-"3 Inkmoth Nexus",
-"4 Inkmoth Nexus",
+"Inkmoth Nexus",
+"Inkmoth Nexus",
+"Inkmoth Nexus",
+"Inkmoth Nexus",
 
 
-"1 Mountain",
+"Mountain",
 
 
-"1 Spire of Industry",
-"2 Spire of Industry",
-"3 Spire of Industry",
-"4 Spire of Industry",
+"Spire of Industry",
+"Spire of Industry",
+"Spire of Industry",
+"Spire of Industry",
 
 
-"1 Arcbound Ravager",
-"2 Arcbound Ravager",
-"3 Arcbound Ravager",
-"4 Arcbound Ravager",
+"Arcbound Ravager",
+"Arcbound Ravager",
+"Arcbound Ravager",
+"Arcbound Ravager",
 
 
-"1 Etched Champion",
-"2 Etched Champion",
+"Etched Champion",
+"Etched Champion",
 
 
-"1 Master of Etherium",
+"Master of Etherium",
 
 
-"1 Memnite",
-"2 Memnite",
+"Memnite",
+"Memnite",
 
 
-"1 Ornithopter",
-"2 Ornithopter",
-"3 Ornithopter",
-"4 Ornithopter",
+"Ornithopter",
+"Ornithopter",
+"Ornithopter",
+"Ornithopter",
 
 
-"1 Signal Pest",
-"2 Signal Pest",
-"3 Signal Pest",
-"4 Signal Pest",
+"Signal Pest",
+"Signal Pest",
+"Signal Pest",
+"Signal Pest",
 
 
-"1 Steel Overseer",
-"2 Steel Overseer",
-"3 Steel Overseer",
-"4 Steel Overseer",
+"Steel Overseer",
+"Steel Overseer",
+"Steel Overseer",
+"Steel Overseer",
 
 
-"1 Vault Skirge",
-"2 Vault Skirge",
-"3 Vault Skirge",
-"4 Vault Skirge",
+"Vault Skirge",
+"Vault Skirge",
+"Vault Skirge",
+"Vault Skirge",
 
 
-"1 Galvanic Blast",
-"2 Galvanic Blast",
-"3 Galvanic Blast",
+"Galvanic Blast",
+"Galvanic Blast",
+"Galvanic Blast",
 
 
-"1 Cranial Plating",
-"2 Cranial Plating",
-"3 Cranial Plating",
-"4 Cranial Plating",
+"Cranial Plating",
+"Cranial Plating",
+"Cranial Plating",
+"Cranial Plating",
 
 
-"1 Karn, Scion of Urza",
-"2 Karn, Scion of Urza",
+"Karn, Scion of Urza",
+"Karn, Scion of Urza",
 
 
-"1 Mox Opal",
-"2 Mox Opal",
-"3 Mox Opal",
-"4 Mox Opal",
+"Mox Opal",
+"Mox Opal",
+"Mox Opal",
+"Mox Opal",
 
 
-"1 Springleaf Drum",
-"2 Springleaf Drum",
-"3 Springleaf Drum",
-"4 Springleaf Drum",
+"Springleaf Drum",
+"Springleaf Drum",
+"Springleaf Drum",
+"Springleaf Drum",
 
 
-"1 Welding Jar"];
+"Welding Jar"];
 
 var affinitySide = [
 "2 Ancient Grudge",
@@ -114,7 +114,7 @@ function randomWholeNum() {
 var rand = affinityMain[Math.floor(Math.random() * affinityMain.length)];
 function openingHand() {return rand;}
 
-console.log (openingHand());
+
 
 function randomize(affinityMain) {
     var i = affinityMain.length,
@@ -138,5 +138,5 @@ function randomize(affinityMain) {
 var Shuffle = randomize(affinityMain);
 console.log ();
 
-var openingHand = (Shuffle[1]+Shuffle[2]+Shuffle[3]+Shuffle[4]+Shuffle[5]+Shuffle[6]+Shuffle[7]);
+var openingHand = Shuffle.slice(0,7).join(', ');
 console.log(openingHand);
