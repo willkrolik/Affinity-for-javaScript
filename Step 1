@@ -114,5 +114,29 @@ function randomWholeNum() {
 var rand = affinityMain[Math.floor(Math.random() * affinityMain.length)];
 function openingHand() {return rand;}
 
-console.log (openingHand);
+console.log (openingHand());
 
+function randomize(affinityMain) {
+    var i = affinityMain.length,
+        j = 0,
+        temp;
+
+    while (i--) {
+
+        j = Math.floor(Math.random() * (i+1));
+
+        // swap randomly chosen element with current element
+        temp = affinityMain[i];
+        affinityMain[i] = affinityMain[j];
+        affinityMain[j] = temp;
+
+    }
+
+    return affinityMain;
+}
+
+var Shuffle = randomize(affinityMain);
+console.log ();
+
+var openingHand = (Shuffle[1]+Shuffle[2]+Shuffle[3]+Shuffle[4]+Shuffle[5]+Shuffle[6]+Shuffle[7]);
+console.log(openingHand);
