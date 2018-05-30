@@ -56,21 +56,30 @@ function randomize(affinityMain) {
         temp;
 
     while (i--) {
-
         j = Math.floor(Math.random() * (i+1));
-
         // swap randomly chosen element with current element
         temp = affinityMain[i];
         affinityMain[i] = affinityMain[j];
         affinityMain[j] = temp;
 
     }
-
-    return affinityMain;
+    return affinityMain;  
 }
+function didIWin (hand){
+    return false
+;}
 
-var Shuffle = randomize(affinityMain);
-console.log ();
-
-var openingHand = Shuffle.slice(0,7).join(', ');
-console.log(openingHand);
+for (var i = 0; i < 5; i++) {
+    var Shuffle = randomize(affinityMain);
+    console.log ();
+    var openingHand = Shuffle.slice(0,7).join(', ');
+    console.log(openingHand);
+    if (didIWin(openingHand)) {
+        console.log("I win!");
+    
+    } else {
+        console.log (" I lose!");
+        
+    }
+    
+}
