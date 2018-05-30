@@ -83,3 +83,5 @@ for (var i = 0; i < 5; i++) {
     }
     
 }
+// next steps: figure out the Iwin function and add global variable set to 0 increment I win and I lose. Instead of hardcoding 5, amke that 
+// a variable win% and lose%.
